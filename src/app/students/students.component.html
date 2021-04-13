@@ -1,1 +1,12 @@
-<p>students works!</p>
+<h2>{{student.name | uppercase}} Details</h2>
+<div><span>RA: </span>{{student.ra}}</div>
+<div>
+    <label for="name">Student name: </label>
+    <input id="name" [(ngModel)]="student.name" placeholder="name"><br>
+    <label for="age">Student age: </label>
+    <input id="age" [(ngModel)]="student.age" placeholder="age"><br>
+    <label for="name">Student class: </label>
+    <input id="class" [(ngModel)]="student.class" placeholder="class"><br>
+    <label for="name">Parent name: </label>
+    <input id="Parent Name" [(ngModel)]="student.parentName" placeholder="parentName">
+  </div>

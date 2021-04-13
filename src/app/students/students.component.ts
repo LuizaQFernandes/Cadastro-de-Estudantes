@@ -8,6 +8,12 @@ import {Student} from '../student'
 })
 export class StudentsComponent implements OnInit {
 
+  @Component({
+    selector: 'app-students',
+    templateUrl: './students.component.html',
+    styleUrls: ['./students.component.css']
+  })
+  
   student: Student = {
     ra: 1234,
     name: 'Ana',
