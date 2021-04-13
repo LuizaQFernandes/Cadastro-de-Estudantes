@@ -18,7 +18,7 @@ export class StudentsComponent implements OnInit {
     ra: 1234,
     name: 'Ana',
     age: 12,
-    class: '3° Grade',
+    class: '3° Ano',
     parentName: 'Maria',
   }
 

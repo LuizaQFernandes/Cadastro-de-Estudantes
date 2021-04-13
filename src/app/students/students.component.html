@@ -3,20 +3,24 @@
 <div><span>RA: </span>{{student.ra}}</div>
 <div><span>Nome: </span>{{student.name}}</div>
 <div><span>Idade: </span>{{student.age}}</div>
-<div><span>Classe </span>{{student.parentName}}</div>
-<div><span>Nome do Responsável: </span>{{student.ra}}</div>
+<div><span>Classe: </span>{{student.class}}</div>
+<div><span>Nome do Responsável: </span>{{student.parentName}}</div>
 
 <br><br>
 
 <div>
     <label for="ra"> Registro do Aluno: </label>
-    <input id="name" [(ngModel)]="student.ra" placeholder="RA"><br>
+    <input id="ra" [(ngModel)]="student.ra" placeholder="RA"><br>
+
     <label for="name">Nome do estudante: </label>
-    <input id="name" [(ngModel)]="student.name" placeholder="name"><br>
+    <input id="name" [(ngModel)]="student.name" placeholder="nome"><br>
+
     <label for="age">Idade: </label>
-    <input id="age" [(ngModel)]="student.age" placeholder="age"><br>
-    <label for="name">Classe: </label>
-    <input id="class" [(ngModel)]="student.class" placeholder="class"><br>
-    <label for="name">Nome do Responsável: </label>
-    <input id="Parent Name" [(ngModel)]="student.parentName" placeholder="parent name">
+    <input id="age" [(ngModel)]="student.age" placeholder="idade"><br>
+
+    <label for="class">Classe: </label>
+    <input id="class" [(ngModel)]="student.class" placeholder="classe"><br>
+
+    <label for="Parent Name">Nome do Responsável: </label>
+    <input id="Parent Name" [(ngModel)]="student.parentName" placeholder="responsável">
   </div>
