@@ -1,26 +1,38 @@
-<h2>Informações: {{student.name | uppercase}}</h2>
+<div class="container">
+  <div class=content>
+    <div>
+      <div *ngIf="selectedStudent">
 
-<div><span>RA: </span>{{student.ra}}</div>
-<div><span>Nome: </span>{{student.name}}</div>
-<div><span>Idade: </span>{{student.age}}</div>
-<div><span>Classe: </span>{{student.class}}</div>
-<div><span>Nome do Responsável: </span>{{student.parentName}}</div>
+        <h2 class=title>{{selectedStudent.name | uppercase}}</h2>
 
-<br><br>
+        <div>
+          <label for="ra"> Registro do Aluno: </label>
+          <input id="ra" [(ngModel)]="selectedStudent.ra" placeholder="RA"><br>
 
-<div>
-    <label for="ra"> Registro do Aluno: </label>
-    <input id="ra" [(ngModel)]="student.ra" placeholder="RA"><br>
+          <label for="name">Nome do estudante: </label>
+          <input id="name" [(ngModel)]="selectedStudent.name" placeholder="nome"><br>
 
-    <label for="name">Nome do estudante: </label>
-    <input id="name" [(ngModel)]="student.name" placeholder="nome"><br>
+          <label for="age">Idade: </label>
+          <input id="age" [(ngModel)]="selectedStudent.age" placeholder="idade"><br>
 
-    <label for="age">Idade: </label>
-    <input id="age" [(ngModel)]="student.age" placeholder="idade"><br>
+          <label for="class">Classe: </label>
+          <input id="class" [(ngModel)]="selectedStudent.class" placeholder="classe"><br>
 
-    <label for="class">Classe: </label>
-    <input id="class" [(ngModel)]="student.class" placeholder="classe"><br>
+          <label for="Parent Name">Nome do Responsável: </label>
+          <input id="Parent Name" [(ngModel)]="selectedStudent.parentName" placeholder="responsável">
+        </div>
+      </div>
 
-    <label for="Parent Name">Nome do Responsável: </label>
-    <input id="Parent Name" [(ngModel)]="student.parentName" placeholder="responsável">
+      <br><br>
+
+      <h2 class=title>Estudantes Cadastrados</h2>
+
+      <ul class="students">
+        <li *ngFor="let student of students" [class.selected]="student === selectedStudent" (click)="onSelect(student)">
+
+          <span class="badge">{{student.id}}</span> {{student.name}}
+        </li>
+      </ul>
+
+    </div>
   </div>

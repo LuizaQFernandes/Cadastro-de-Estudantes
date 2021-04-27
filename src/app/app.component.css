@@ -10,8 +10,9 @@
     margin-top: 25px;
     margin-left: 10px;
     margin-right: 10px;
-    padding: 10px;
+    padding: 30px;
 
-    background-color: #e4e4e4;
-    width: auto;
+    background-color: #ffffff;
+    width: 500px;
+    border-radius: 20px;
 }

@@ -9,3 +9,9 @@ body{
     background-image: url(https://source.unsplash.com/2LJ4rqK2qfU);
     background-size: cover;
 }
+
+input{
+    background: rgb(226, 226, 226);
+    margin: 3px;
+    width: auto
+}
