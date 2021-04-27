@@ -19,5 +19,41 @@
 
 .title{
     margin: 10px;
-
 }
+
+.students {
+    margin: 0 0 2em 0;
+    list-style-type: none;
+    padding: 0;
+    width: auto;
+  }
+  .students li {
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    position: relative;
+    
+    background-color: #EEE;
+    margin: 5px;
+    padding: 2px;
+    height: 20px;
+    border-radius: 4px;
+  }
+  .students li:hover {
+    color: #2c3a41;
+    background-color: #e6e6e6;
+    left: .1em;
+  }
+  .students li.selected {
+    background-color: rgb(48, 119, 177);
+    color: white;
+  }
+  .students li.selected:hover {
+    background-color: rgb(48, 119, 177);
+    color: white;
+  }
+  .students li.selected:active {
+    background-color: rgb(48, 119, 177);
+    color: white;
+  }
+  

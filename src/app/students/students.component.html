@@ -6,31 +6,32 @@
         <h2 class=title>{{selectedStudent.name | uppercase}}</h2>
 
         <div>
-          <label for="ra"> Registro do Aluno: </label>
+          <label for="ra"> RA: </label><br>
           <input id="ra" [(ngModel)]="selectedStudent.ra" placeholder="RA"><br>
 
-          <label for="name">Nome do estudante: </label>
+          <label for="name">Nome do estudante: </label><br>
           <input id="name" [(ngModel)]="selectedStudent.name" placeholder="nome"><br>
 
-          <label for="age">Idade: </label>
+          <label for="age">Idade: </label><br>
           <input id="age" [(ngModel)]="selectedStudent.age" placeholder="idade"><br>
 
-          <label for="class">Classe: </label>
+          <label for="class">Classe: </label><br>
           <input id="class" [(ngModel)]="selectedStudent.class" placeholder="classe"><br>
 
-          <label for="Parent Name">Nome do Responsável: </label>
+          <label for="Parent Name">Nome do Responsável: </label><br>
           <input id="Parent Name" [(ngModel)]="selectedStudent.parentName" placeholder="responsável">
         </div>
       </div>
 
-      <br><br>
-
       <h2 class=title>Estudantes Cadastrados</h2>
 
       <ul class="students">
-        <li *ngFor="let student of students" [class.selected]="student === selectedStudent" (click)="onSelect(student)">
-
+        <li 
+          *ngFor="let student of students" 
+          [class.selected]="student === selectedStudent" 
+          (click)="onSelect(student)">
           <span class="badge">{{student.id}}</span> {{student.name}}
+
         </li>
       </ul>
 

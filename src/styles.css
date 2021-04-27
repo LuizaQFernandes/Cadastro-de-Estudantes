@@ -13,5 +13,9 @@ body{
 input{
     background: rgb(226, 226, 226);
     margin: 3px;
-    width: auto
+    width: 100%;
+    margin-bottom: 15px;
+    height: 22px;
+
+    font-size: 0.9rem;
 }
