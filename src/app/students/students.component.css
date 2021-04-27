@@ -49,7 +49,7 @@
     color: white;
   }
   .students li.selected:hover {
-    background-color: rgb(48, 119, 177);
+    background-color: rgb(26, 66, 99);
     color: white;
   }
   .students li.selected:active {
