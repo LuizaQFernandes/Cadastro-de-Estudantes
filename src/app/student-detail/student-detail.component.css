@@ -1,6 +1,6 @@
 .container{
     display: flex;
-    justify-content: center;
+    justify-content: center; 
 }
 
 .content{
@@ -13,6 +13,19 @@
     padding: 30px;
 
     background-color: #ffffff;
-    width: auto;
     border-radius: 20px;
+}
+
+.students[_ngcontent-ppx-c41] {
+    margin: 0;
+    list-style-type: none;
+}  
+
+input{
+    font-size: 0.9rem;
+}
+
+
+.title{
+    margin: 10px;
 }

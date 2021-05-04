@@ -1,29 +1,9 @@
 <div class="container">
   <div class=content>
     <div>
-      <div *ngIf="selectedStudent">
-
-        <h2 class=title>{{selectedStudent.name | uppercase}}</h2>
-
-        <div>
-          <label for="ra"> RA: </label><br>
-          <input id="ra" [(ngModel)]="selectedStudent.ra" placeholder="RA"><br>
-
-          <label for="name">Nome do estudante: </label><br>
-          <input id="name" [(ngModel)]="selectedStudent.name" placeholder="nome"><br>
-
-          <label for="age">Idade: </label><br>
-          <input id="age" [(ngModel)]="selectedStudent.age" placeholder="idade"><br>
-
-          <label for="class">Classe: </label><br>
-          <input id="class" [(ngModel)]="selectedStudent.class" placeholder="classe"><br>
-
-          <label for="Parent Name">Nome do Responsável: </label><br>
-          <input id="Parent Name" [(ngModel)]="selectedStudent.parentName" placeholder="responsável">
-        </div>
+      <div class="container">
+        <h2 class=title>ESTUDANTES CADASTRADOS</h2>
       </div>
-
-      <h2 class=title>Estudantes Cadastrados</h2>
 
       <ul class="students">
         <li 
@@ -35,5 +15,7 @@
         </li>
       </ul>
 
+      <app-student-detail [student]="selectedStudent"></app-student-detail>
+    </div>
     </div>
   </div>
