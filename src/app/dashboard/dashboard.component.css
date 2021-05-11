@@ -19,7 +19,7 @@ h2 {
   }
 
 a {
-background-color: #3f525c;
+background-color: rgb(255, 68, 99);
 border-radius: 2px;
 padding: 1rem;
 font-size: 1.2rem;
@@ -46,5 +46,5 @@ a {
 }
 
 a:hover {
-background-color: #000;
+background-color: rgb(197, 27, 55);
 }

@@ -29,3 +29,14 @@ input{
 .title{
     margin: 10px;
 }
+
+button{
+    background-color: rgb(252, 255, 100);
+    padding: 10px;
+    border-radius: 9px;
+    font-size: 1rem;
+}
+
+button:hover{
+    background-color: rgb(247, 182, 63)
+}

@@ -32,7 +32,8 @@
     cursor: pointer;
     position: relative;
     
-    background-color: #EEE;
+    background-color: rgb(252, 255, 100);
+
     margin: 5px;
     padding: 2px;
     height: 20px;
@@ -40,7 +41,7 @@
   }
   .students li:hover {
     color: #2c3a41;
-    background-color: #e6e6e6;
+    background-color: rgb(247, 182, 63);
     left: .1em;
   }
   .students li.selected {

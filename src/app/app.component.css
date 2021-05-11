@@ -20,7 +20,7 @@
 }
 
 .nav{
-    margin-top: 40px;
+    margin-top: 10px;
 }
 .nav a {
     padding: 1rem;
@@ -29,14 +29,14 @@
     margin-right: 10px;
     margin-left: 10px;
     display: inline-block;
-    background-color: #e8e8e8;
-    color: #3d3d3d;
-    border-radius: 4px;
+    background-color: rgb(48, 119, 177);
+    color: white;
+    border-radius: 14px;
   }
   
   .nav a:hover {
     color: white;
-    background-color: #42545C;
+    background-color: rgb(26, 66, 99);
   }
   .nav a.active {
     background-color: black;
