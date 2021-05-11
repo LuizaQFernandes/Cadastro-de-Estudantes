@@ -7,13 +7,14 @@
   display: flex;
   justify-content: center;
 
-  margin-top: 25px;
   margin-left: 10px;
   margin-right: 10px;
   padding: 30px;
 
   background-color: #ffffff;
   border-radius: 20px;
+
+  width: 25rem;
 }
 
 .title{
@@ -21,7 +22,7 @@
 }
 
 .students {
-    margin: 0 0 2em 0;
+    margin: 0;
     list-style-type: none;
     padding: 0;
     width: auto;
@@ -36,8 +37,8 @@
 
     margin: 5px;
     padding: 2px;
-    height: 20px;
     border-radius: 4px;
+    height: auto;
   }
   .students li:hover {
     color: #2c3a41;
@@ -59,5 +60,7 @@
   
 a{
   text-decoration: none;
-  color: black
+  color: black;
+  margin-top: 0.28rem;
+  height: auto;
 }

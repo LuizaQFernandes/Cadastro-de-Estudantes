@@ -1,11 +1,12 @@
 <div *ngIf="student">
-    
-<div class="container">
-  <h2 class=title>{{student.name | uppercase}}</h2>
-</div>  
 
 <div class="container">
   <div class=content>
+
+  <div class="container">
+      <h2 class=title>{{student.name | uppercase}}</h2>
+  </div>
+
     <label for="ra"> RA: </label><br>
     <input id="ra" [(ngModel)]="student.ra" placeholder="RA"><br>
 
