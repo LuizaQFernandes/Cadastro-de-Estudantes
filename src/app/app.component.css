@@ -4,15 +4,40 @@
 }
 
 .content{
-    display: flex;
+    display: block;
     justify-content: center;
 
     margin-top: 25px;
     margin-left: 10px;
     margin-right: 10px;
+    margin-bottom: 30px;
+
     padding: 30px;
 
     background-color: #ffffff;
     width: auto;
     border-radius: 20px;
 }
+
+.nav{
+    margin-top: 40px;
+}
+.nav a {
+    padding: 1rem;
+    text-decoration: none;
+    margin-top: 10px;
+    margin-right: 10px;
+    margin-left: 10px;
+    display: inline-block;
+    background-color: #e8e8e8;
+    color: #3d3d3d;
+    border-radius: 4px;
+  }
+  
+  .nav a:hover {
+    color: white;
+    background-color: #42545C;
+  }
+  .nav a.active {
+    background-color: black;
+  }

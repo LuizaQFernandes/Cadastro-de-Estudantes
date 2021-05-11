@@ -1,8 +1,16 @@
 <div class="container">
   <div class=content>
     <h1>{{title}}</h1>
+
+    <div class="container">
+    <div class="nav">
+      <a routerLink="/students">Estudantes</a>
+      <a routerLink="/dashboard">Dashboard</a>
+    </div>
+  </div>
+
   </div>
 </div>
 
-<app-students></app-students>
+<router-outlet></router-outlet>
 <app-messages></app-messages>

@@ -4,7 +4,7 @@
 }
 
 .content{
-    display: flex;
+    display: block;
     justify-content: center;
 
     margin-top: 25px;

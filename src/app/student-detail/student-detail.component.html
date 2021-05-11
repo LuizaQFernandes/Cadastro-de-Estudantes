@@ -4,6 +4,8 @@
   <h2 class=title>{{student.name | uppercase}}</h2>
 </div>  
 
+<div class="container">
+  <div class=content>
     <label for="ra"> RA: </label><br>
     <input id="ra" [(ngModel)]="student.ra" placeholder="RA"><br>
 
@@ -19,5 +21,10 @@
     <label for="Parent Name">Nome do Responsável: </label><br>
     <input id="Parent Name" [(ngModel)]="student.parentName" placeholder="responsável">
 
+
+    <button (click)="goBack()">go back</button>
+
+  </div>
+</div>
 </div>
 
