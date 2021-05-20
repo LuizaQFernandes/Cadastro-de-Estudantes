@@ -57,10 +57,45 @@
     background-color: rgb(48, 119, 177);
     color: white;
   }
+
+  .add-button{
+    background-color:rgb(255, 68, 99);
+    color: white;
+
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    height: 2.3rem;
+    width: 190px;
+    cursor: pointer;
+  }
+
+  .add-button:hover{
+    color: #e6e6e6;
+    background-color: rgb(197, 27, 55);
+  }
+
   
 a{
   text-decoration: none;
   color: black;
   margin-top: 0.28rem;
   height: auto;
+}
+
+.delete{
+  height: 1.3rem;
+  width: 1.3rem;
+  border-radius: 25px;
+
+  margin-left: 2rem;
+  cursor: pointer;
+
+  background-color: rgb(247, 182, 63);
+   
+}
+
+.delete:hover{
+  background-color: rgb(252, 255, 100);
+
 }

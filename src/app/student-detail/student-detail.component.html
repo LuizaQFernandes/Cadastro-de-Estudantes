@@ -7,6 +7,9 @@
       <h2 class=title>{{student.name | uppercase}}</h2>
   </div>
 
+    <label for="id"> ID: </label><br>
+    <input id="id" [(ngModel)]="student.id" placeholder="ID"><br>
+
     <label for="ra"> RA: </label><br>
     <input id="ra" [(ngModel)]="student.ra" placeholder="RA"><br>
 
@@ -17,12 +20,13 @@
     <input id="age" [(ngModel)]="student.age" placeholder="idade"><br>
 
     <label for="class">Classe: </label><br>
-    <input id="class" [(ngModel)]="student.class" placeholder="classe"><br>
+    <input id="class" [(ngModel)]="student.studentClass" placeholder="classe"><br>
 
     <label for="Parent Name">Nome do Responsável: </label><br>
     <input id="Parent Name" [(ngModel)]="student.parentName" placeholder="responsável">
 
     <div class="container">
+      <button (click)="save()">Salvar</button>
       <button (click)="goBack()">Voltar</button>
     </div>  
 

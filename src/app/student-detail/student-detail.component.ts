@@ -26,13 +26,20 @@ export class StudentDetailComponent implements OnInit {
   }
   
   getStudent(): void {
-    const ra = Number(this.route.snapshot.paramMap.get('ra'));
-    this.studentService.getStudent(ra)
+    const id = Number(this.route.snapshot.paramMap.get('id'));
+    this.studentService.getStudent(id)
       .subscribe(student => this.student = student);
   }
 
   goBack(): void {
     this.location.back();
+  }
+
+  save(): void {
+    if (this.student) {
+      this.studentService.updateStudent(this.student)
+        .subscribe(() => this.goBack());
+    }
   }
 
 }

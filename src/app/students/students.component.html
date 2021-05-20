@@ -8,11 +8,46 @@
       <ul class="students">
         <li 
           *ngFor="let student of students" >
-          <a routerLink="/detail/{{student.ra}}">
+          <a routerLink="/detail/{{student.id}}">
             <span class="badge">{{student.name}}</span> 
           </a>
+          <button class="delete" title="delete student"  (click)="delete(student)">x</button>
         </li>
       </ul>
+<br>
+<br>
+<div class="container">
+  <h2 class=title>NOVO CADASTRO</h2>
+</div>
+<br>
+
+      <div>
+        <label for="new-student">Nome do Estudante: </label>
+        <input id="new-student" #studentName />
+
+        <label for="new-student">RA do Estudante: </label>
+        <input id="new-student" #studentRa />
+
+        <label for="new-student">Idade do Estudante: </label>
+        <input id="new-student" #studentAge />
+
+        <label for="new-student">Classe do Estudante: </label>
+        <input id="new-student" #studentStudentClass />
+
+        <label for="new-student">Nome do responsável do Estudante: </label>
+        <input id="new-student" #studentParentName />
+
+      
+        <!-- (click) passes input value to add() and then clears the input -->
+        <div class="container">
+        <button class="add-button" (click)="add(studentName.value, studentRa.value, studentAge.value, studentStudentClass.value, studentParentName.value); studentName.value='';  studentRa.value=''; studentAge.value=''; studentStudentClass.value=''; studentParentName.value=''">
+          
+          Adicionar Estudante
+        </button>
+
+    
+      </div>
+      </div>
 
     </div>
     </div>

@@ -1,7 +1,8 @@
 export interface Student {
+    id: number
     ra: number;
     name: string;
     age: number;
-    class: string;
+    studentClass: string;
     parentName: string;
 }
