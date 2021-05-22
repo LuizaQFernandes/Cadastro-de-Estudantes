@@ -1,7 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {Student} from '../student'
 import { StudentService } from '../student.service'
-import { MessageService } from '../message.service';
 
 @Component({
   selector: 'app-students',

@@ -21,7 +21,7 @@ export class StudentService {
     headers: new HttpHeaders({ 'Content-Type': 'application/json' })
   }; 
 
-  /** GET heroes from the server */
+  /** GET students from the server */
   getStudents(): Observable<Student[]> {
     return this.http.get<Student[]>(this.studentsUrl)
     .pipe(
@@ -30,7 +30,7 @@ export class StudentService {
     );
   }
 
-  /** GET hero by id. Will 404 if id not found */
+  /** GET student by id. Will 404 if id not found */
   getStudent(id: number): Observable<Student> {
     const url = `${this.studentsUrl}/${id}`;
     return this.http.get<Student>(url).pipe(
@@ -39,7 +39,7 @@ export class StudentService {
     );
   }
 
-  /** Log a HeroService message with the MessageService */
+  /** Log a studentService message with the MessageService */
   private log(message: string) {
     this.messageService.add(`StudentService: ${message}`);
   }
@@ -61,16 +61,16 @@ export class StudentService {
     };
   }
 
-  /** PUT: update the hero on the server */
+  /** PUT: update the student on the server */
   updateStudent(student: Student): Observable<any> {
     const url = `${this.studentsUrl}/${student.id}`;
     return this.http.put(url, student, this.httpOptions).pipe(
-      tap(_ => this.log(`updated hero id=${student.id}`)),
+      tap(_ => this.log(`updated student id=${student.id}`)),
       catchError(this.handleError<any>('updateStudent'))
     );
   }
 
-  /** POST: add a new hero to the server */
+  /** POST: add a new  student to the server */
   addStudent(student: Student): Observable<Student> {
     return this.http.post<Student>(this.studentsUrl, student, this.httpOptions).pipe(
       tap((newStudent: Student) => this.log(`added student w/ id=${newStudent.id}`)),
@@ -79,7 +79,7 @@ export class StudentService {
   
   }
 
-  /** DELETE: delete the hero from the server */
+  /** DELETE: delete the  student from the server */
   deleteStudent(id: number): Observable<Student> {
     const url = `${this.studentsUrl}/${id}`;
 
