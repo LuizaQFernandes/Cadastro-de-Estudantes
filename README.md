@@ -1,6 +1,20 @@
-# AngularCadastroDeEstudantes
+# Cadastro De Estudantes
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.7.
+
+Cadastre seus alunos de maneira prática e rápida !     :boy: :girl: :books:
+
+## Layout
+
+Dashboard
+![image](https://user-images.githubusercontent.com/62905577/119230780-0f839400-baf4-11eb-86a9-eb31b54c69f6.png)
+
+Detalhes do estudante
+![image](https://user-images.githubusercontent.com/62905577/119230833-3fcb3280-baf4-11eb-8e1a-8033a8df3275.png)
+
+Estudantes
+![image](https://user-images.githubusercontent.com/62905577/119230900-920c5380-baf4-11eb-9040-d5ec0a550ad8.png)
+![image](https://user-images.githubusercontent.com/62905577/119230910-a05a6f80-baf4-11eb-940f-16cfbd6e378d.png)
 
 ## Development server
 
