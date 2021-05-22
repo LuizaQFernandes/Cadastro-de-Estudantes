@@ -3,55 +3,42 @@
     {
       "id": 1,
       "ra": 1235231,
-      "name": "Angela Moraes",
+      "name": "Angela Campos Moraes",
       "age": 12,
-      "class": "4° ano",
+      "studentClass": "4° ano",
       "parentName": "Maria Clara Moraes"
     },
     {
-      "id": 3,
-      "ra": 154791,
-      "name": "Jenifer Alves Silva",
-      "age": 12,
-      "class": "4° ano",
-      "parentName": "José Henrique Silva"
-    },
-    {
-      "id": 5,
-      "ra": 10692871,
-      "name": "José Henrique Silveira",
-      "age": "19",
-      "class": "9° ano",
-      "parentName": "Regina Souza Silveira",
-      "studentClass": "4° ano"
-    },
-    {
-      "name": "Ana Julia Amaral",
-      "id": 6
-    },
-    {
       "name": "Carlos Araujo",
-      "id": 7,
-      "ra": "3525462",
-      "age": "14",
-      "studentClass": "5° ano",
-      "parentName": "Maria Araujo Santos"
+      "ra": "5554545",
+      "age": "13 anos",
+      "studentClass": "5° Ano",
+      "parentName": "Maria Aparecida Araujo",
+      "id": 2
     },
     {
       "name": "Maria Aparecida Santana",
-      "ra": "5235254",
-      "age": "19",
-      "studentClass": "3° M",
-      "parentName": "Carolina Santana",
-      "id": 8
+      "ra": "233223",
+      "age": "15 anos",
+      "studentClass": "8° ano",
+      "parentName": "Maria Aparecida Santana",
+      "id": 3
     },
     {
       "name": "Luiza Maria Silva",
-      "ra": "423325",
-      "age": "12",
+      "ra": "333434",
+      "age": "12 anos",
       "studentClass": "4° ano",
-      "parentName": "Regina santos Silva",
-      "id": 10
+      "parentName": "Maria Silva",
+      "id": 4
+    },
+    {
+      "name": "Fernando Amaral Lima",
+      "ra": "43444",
+      "age": "12",
+      "studentClass": "7° ano",
+      "parentName": "Fábio Amaral",
+      "id": 5
     }
   ]
 }
