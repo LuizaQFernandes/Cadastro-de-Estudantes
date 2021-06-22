@@ -9,8 +9,6 @@ import { catchError, map, tap } from 'rxjs/operators';
   providedIn: 'root'
 })
 
-
-
 export class StudentService {
 
   constructor(
@@ -44,7 +42,7 @@ export class StudentService {
     this.messageService.add(`StudentService: ${message}`);
   }
 
-  private studentsUrl = 'http://localhost:3000/students';  // URL to web api
+  private studentsUrl = 'http://localhost:8080/students';  // URL to web api
 
 
   private handleError<T>(operation = 'operation', result?: T) {
