@@ -21,7 +21,7 @@ export class StudentsComponent implements OnInit {
     .subscribe(students => this.students = students);
   }
 
-  add(name: string, ra: number, age: number, sala: string, parent: string): void {
+  add(age: number, name: string, parent: string, ra: number,  sala: string): void {
     name = name.trim();
     sala = sala.trim();
     parent = parent.trim();

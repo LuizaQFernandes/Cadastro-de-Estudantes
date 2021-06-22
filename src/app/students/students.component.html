@@ -37,10 +37,16 @@
         <label for="new-student-parent">Nome do responsável do Estudante: </label>
         <input type="text" id="new-student-parent" #studentParent />
 
-      
         <!-- (click) passes input value to add() and then clears the input -->
         <div class="container">
-        <button class="add-button" (click)="add(studentAge.value, studentName.value, studentParent.value, studentSala.value, studentRa.value); studentName.value='';  studentRa.value=''; studentAge.value=''; studentSala.value=''; studentParent.value=''">
+        <button class="add-button" 
+        (click)="add(studentAge.value, 
+                    studentName.value, 
+                    studentParent.value, 
+                    studentRa.value,
+                    studentSala.value); 
+                    
+                    studentName.value='';  studentRa.value=''; studentAge.value=''; studentSala.value=''; studentParent.value=''">
           
           Adicionar Estudante
         </button>
