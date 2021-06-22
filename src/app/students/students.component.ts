@@ -21,17 +21,17 @@ export class StudentsComponent implements OnInit {
     .subscribe(students => this.students = students);
   }
 
-  add(name: string, ra: number, age: number, studentClass: string, parentName: string): void {
+  add(name: string, ra: number, age: number, sala: string, parent: string): void {
     name = name.trim();
-    studentClass = studentClass.trim();
-    parentName = parentName .trim();
+    sala = sala.trim();
+    parent = parent.trim();
 
     if (!name) 
     { 
       return; 
     }
 
-    this.studentService.addStudent({ name, ra, age, studentClass, parentName }  as Student)
+    this.studentService.addStudent({ age, name, parent, ra, sala}  as Student)
       .subscribe(student => {
         this.students.push(student);
       });

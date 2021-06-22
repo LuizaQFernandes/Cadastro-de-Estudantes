@@ -22,25 +22,25 @@
 <br>
 
       <div>
-        <label for="new-student">Nome do Estudante: </label>
-        <input type="text" id="new-student" #studentName />
+        <label for="new-student-name">Nome do Estudante: </label>
+        <input type="text" id="new-student-name" #studentName />
 
-        <label for="new-student">RA do Estudante: </label>
-        <input type="number" id="new-student" #studentRa />
+        <label for="new-student-ra">RA do Estudante: </label>
+        <input type="number" id="new-student-ra" #studentRa />
 
-        <label for="new-student">Idade do Estudante: </label>
-        <input type="text" id="new-student" #studentAge />
+        <label for="new-student-age">Idade do Estudante: </label>
+        <input type="text" id="new-student-age" #studentAge />
 
-        <label for="new-student">Classe do Estudante: </label>
-        <input type="text" id="new-student" #studentStudentClass />
+        <label for="new-student-class">Classe do Estudante: </label>
+        <input type="text" id="new-student-class" #studentSala />
 
-        <label for="new-student">Nome do responsável do Estudante: </label>
-        <input type="text" id="new-student" #studentParentName />
+        <label for="new-student-parent">Nome do responsável do Estudante: </label>
+        <input type="text" id="new-student-parent" #studentParent />
 
       
         <!-- (click) passes input value to add() and then clears the input -->
         <div class="container">
-        <button class="add-button" (click)="add(studentName.value, studentRa.value, studentAge.value, studentStudentClass.value, studentParentName.value); studentName.value='';  studentRa.value=''; studentAge.value=''; studentStudentClass.value=''; studentParentName.value=''">
+        <button class="add-button" (click)="add(studentAge.value, studentName.value, studentParent.value, studentSala.value, studentRa.value); studentName.value='';  studentRa.value=''; studentAge.value=''; studentSala.value=''; studentParent.value=''">
           
           Adicionar Estudante
         </button>

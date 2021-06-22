@@ -3,6 +3,6 @@ export interface Student {
     ra: number;
     name: string;
     age: number;
-    studentClass: string;
-    parentName: string;
+    sala: string;
+    parent: string;
 }
